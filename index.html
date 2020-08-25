@@ -19,7 +19,7 @@
         <h1>Life is Dynamite</h1>
       </header>
       <main>
-        <p>🎤 Streaming Dynamite 🎤</p>
+        <p id="sub-head">🎤 Streaming Dynamite 🎤</p>
         <iframe src="https://www.youtube.com/embed/NvK9APEhcdk?autoplay=1">
         </iframe>
         <marquee>
@@ -64,6 +64,7 @@
       </main>
       <aside class="left-sidebar" style="background-color: rgb(190, 30, 30);">
         <img src="https://www.bt21.com/img/character/bt21/rj.gif" />
+        <button onclick="myFunction()">Click Me!</button>
       </aside>
       <aside class="right-sidebar" style="background-color: rgb(62, 172, 62);">
         <img src="https://www.bt21.com/img/character/bt21/mang.gif" />
@@ -71,4 +72,13 @@
       <footer><h4 style="text-align: center;">borahae</h4></footer>
     </div>
   </body>
+
+  <script>
+    let size = 20;
+    function myFunction() {
+      var x = document.getElementById("sub-head");
+      size = size + 1;
+      x.style.fontSize = size + "px";
+    }
+  </script>
 </html>
