@@ -10,74 +10,8 @@
       sizes="192x192"
       href="https://img.icons8.com/cotton/64/000000/dynamite.png"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Dynamite Site</title>
-    <style>
-      /* mobile screen css */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: lightblue;
-      }
-
-      h1 {
-        color: white;
-        text-align: center;
-      }
-
-      p {
-        font-family: verdana;
-        font-size: 20px;
-        text-align: center;
-      }
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        align-content: center;
-        justify-content: center;
-      }
-      /* bigger screen css */
-      @media only screen and (min-width: 768px) {
-        .content {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        header,
-        footer {
-          width: 100%;
-        }
-        .left-sidebar {
-          order: 1;
-          flex: 1;
-        }
-        main {
-          order: 2;
-          flex: 2;
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-        }
-        .right-sidebar {
-          order: 3;
-          flex: 1;
-        }
-
-        footer {
-          order: 4;
-        }
-
-        .left-sidebar,
-        .right-sidebar {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="content">
@@ -129,18 +63,12 @@
         </marquee>
       </main>
       <aside class="left-sidebar" style="background-color: rgb(190, 30, 30);">
-        <small>
-          Left Side
-        </small>
+        <img src="https://www.bt21.com/img/character/bt21/rj.gif" />
       </aside>
       <aside class="right-sidebar" style="background-color: rgb(62, 172, 62);">
-        <small>
-          Right Side
-        </small>
+        <img src="https://www.bt21.com/img/character/bt21/mang.gif" />
       </aside>
-      <footer>
-        <h4 style="text-align: center;">borahae</h4>
-      </footer>
+      <footer><h4 style="text-align: center;">borahae</h4></footer>
     </div>
   </body>
 </html>
